@@ -5,6 +5,7 @@ describe('Handlebars Templates Lab', function() {
     })
 
     it('has a recipe form', function() {
+      this.timeout(0)
       var recipeForm = document.getElementById("recipe-form")
       expect(recipeForm).toExist("Must provide a form with an id of 'recipe-form'")
       expect(recipeForm).toMatch(/onsubmit="createRecipe()"/)
